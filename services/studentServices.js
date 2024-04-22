@@ -21,6 +21,10 @@
 
 
 const knex = require('knex')(require('../Utlis/database'));
+knex.raw('SELECT 1')
+    .then(() => console.log('Database connection successful'))
+    .catch((error) => console.log('Error occured connecting to database:', error));
+
 
 module.exports.getAllStudents = async () => {
     try {

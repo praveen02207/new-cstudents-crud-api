@@ -10,7 +10,6 @@ const createschema = Joi.object({
 
 });
 
-
 const Updateschema = Joi.object({
     studentname: Joi.string().required(),
     age: Joi.number().integer().required(),
@@ -18,8 +17,6 @@ const Updateschema = Joi.object({
     studentid: Joi.number().integer().required(),
 
 });
-
-
 
 module.exports.getAllStudents = async (req, res) => {
     try {
@@ -41,8 +38,6 @@ module.exports.getAllStudents = async (req, res) => {
     })
 
 }
-
-
 
 module.exports.addStudents = async (req, res) => {
     try {
