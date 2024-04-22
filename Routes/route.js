@@ -10,6 +10,4 @@ router.post('/AddStudent', studentsControllers.addStudents)
 router.post('/updateStudent', studentsControllers.updateStudent)
 router.post('/deleteStudent', studentsControllers.deleteStudent)
 
-
-
 module.exports = router;
