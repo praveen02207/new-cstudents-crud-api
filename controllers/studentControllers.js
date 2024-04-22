@@ -2,12 +2,10 @@ const studentService = require("../services/studentServices")
 const _ = require('lodash')
 const Joi = require('joi');
 
-
 const createschema = Joi.object({
     studentname: Joi.string().required(),
     age: Joi.number().integer().required(),
     phone: Joi.number().integer().required(),
-
 });
 
 const Updateschema = Joi.object({
@@ -15,7 +13,6 @@ const Updateschema = Joi.object({
     age: Joi.number().integer().required(),
     phone: Joi.number().integer().required(),
     studentid: Joi.number().integer().required(),
-
 });
 
 module.exports.getAllStudents = async (req, res) => {
