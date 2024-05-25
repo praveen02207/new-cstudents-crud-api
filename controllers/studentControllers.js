@@ -12,7 +12,7 @@ const Updateschema = Joi.object({
     studentname: Joi.string().required(),
     age: Joi.number().integer().required(),
     phone: Joi.number().integer().required(),
-    studentid: Joi.number().integer().required(),
+    studentid: Joi.number().required(),
 });
 
 module.exports.getAllStudents = async (req, res) => {
